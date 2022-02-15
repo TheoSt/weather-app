@@ -19,24 +19,30 @@
                 <span id="country"></span>
             </div>
             <div id="temp_section">
-                <span id="temp"></span><sup>&#8451;</sup>
+                <div id="temp_number">
+                    <span id="temp">   
+                    </span><span class="celsius_symbol">&#8451;</span>
+                </div>
                 <p id="weather_info"></p>
                 <p id="extra_weather_info"></p>
             </div>
-            <div id="temp_info">
-                <div id="feel_section" class="grid-cell">
+            <div id="temp_info" class="media-scroller snaps-inline">
+                <div id="feel_section" class="media-element">
                     <h3>Feel</h3>
-                    <span id="feel_temp"></span><sup>&#8451;</sup>
+                    <div id="feel_number">
+                        <span id="feel_temp">
+                        </span><span class="celsius_symbol">&#8451;</span>
+                    </div>
                 </div>
-                <div id="humidity_section" class="grid-cell">
+                <div id="humidity_section" class="media-element">
                     <h3>Humidity</h3>
                     <p id="humidity"></p>
                 </div>
-                <div id="pressure_section" class="grid-cell">
+                <div id="pressure_section" class="media-element">
                     <h3>Pressure</h3>
                     <p id="pressure"></p>
                 </div>
-                <div id="wind_speed_section" class="grid-cell">
+                <div id="wind_speed_section" class="media-element">
                     <h3>Wind speed</h3>
                     <p id="wind_speed"></p>
                 </div>

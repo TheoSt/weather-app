@@ -45,8 +45,6 @@ async function fetchData(lat,lon) {
 
 function showResults(data) {
     location_el.textContent = data.name;
-    
-   
     country_el.textContent = data.sys.country;
 
     temp_el.textContent = toCelsius(data.main.temp);
@@ -54,9 +52,15 @@ function showResults(data) {
     extra_weather_info_el.textContent = data.weather[0].description;
 
     feel_el.textContent = toCelsius(data.main.feels_like);
+    humidity_el.textContent = `${data.main.humidity}%`;
+    pressure_el.textContent = `${data.main.pressure}mbar`;
+    wind_speed_el.textContent = `${toKm(data.wind.speed)}m/s`
 }
 
 function toCelsius(val) {
     return Math.floor((parseFloat(val)-273.15));
+}
 
+function toKm(val) {
+    return ((val*18)/5).toFixed(2);
 }

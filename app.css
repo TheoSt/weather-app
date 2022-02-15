@@ -36,3 +36,142 @@ video {
 button {
     font-family:inherit;
 }
+
+#location_section {
+    padding:1rem;
+    font-size:2rem;
+}
+
+#country {
+    font-size:0.9rem;
+}
+
+#temp_section {
+    width:100%;
+    text-align:center;
+    padding:3rem 0;
+    margin:1em 0;
+}
+
+#temp {
+    font-size:5rem;
+}
+
+#temp_number,
+#feel_number {
+    width:50%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+
+#weather_info {
+    font-size:1.2rem;
+}
+
+#extra_weather_info {
+    font-size:0.9rem;
+    margin-top:0.5em;
+}
+
+.media-scroller {
+    display:grid;
+    width:100%;
+    grid-auto-flow:column;
+    grid-auto-columns:99%;
+    overflow-x:auto;
+    overscroll-behavior-inline:contain;
+    gap:1rem;
+    padding:0 1rem 1rem;
+}
+
+.media-element {
+    text-align:center;
+    padding:2rem 0;
+    background:rgba(224, 224, 224, 0.2);
+    border-radius:10px;
+}
+
+.snaps-inline {
+    scroll-snap-type:inline mandatory;
+    scroll-padding-inline:1rem;
+}
+
+.snaps-inline > * {
+    scroll-snap-align:start;
+}
+
+.media-element h3 {
+    font-size:1.5rem;
+    margin-bottom:1rem;
+}
+
+.media-element span:first-of-type {
+    font-size:1.2rem;
+}
+
+
+@media screen and (min-width:1024px) {
+    main {
+        justify-content:center;
+    }
+
+    #location_section {
+        margin:0;
+        font-size:4rem;
+    }
+    
+    #country {
+        font-size:1.1rem;
+    }
+    
+    #temp_section {
+        margin:0;
+    }
+
+    #temp {
+        font-size:7rem;
+    }
+
+    #temp_section .celsius_symbol {
+        margin-top:1rem;
+    }
+
+    #temp_number,
+    #feel_number {
+        width:50%;
+        margin:0 auto;
+        display:flex;
+        justify-content: center;
+    }
+
+    #weather_info {
+        font-size:1.5rem;
+    }
+
+    #extra_weather_info {
+        font-size:1rem;
+    }
+
+    .media-scroller {
+        display:grid;
+        width:100%;
+        grid-auto-flow:column;
+        grid-auto-columns:20%;
+        gap:1rem;
+        justify-content:center;
+        overflow-x:initial;
+        overscroll-behavior-inline:initial;
+    }
+
+    
+    .media-element h3 {
+        font-size:1.5rem;
+    }
+
+    .media-element span:first-of-type,
+    .media-element p {
+        font-size:1.2rem;
+    }
+
+}
