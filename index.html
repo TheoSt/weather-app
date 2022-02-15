@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title>Weather App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <main>
+            <video id="weather_video" autoplay loop muted>
+                <source src="videos/night_clouds.mp4" type="video/mp4">
+            </video>
+            <div id="location_section">
+                <span id="location"></span>
+                <span id="country"></span>
+            </div>
+            <div id="temp_section">
+                <span id="temp"></span><sup>&#8451;</sup>
+                <p id="weather_info"></p>
+                <p id="extra_weather_info"></p>
+            </div>
+            <div id="temp_info">
+                <div id="feel_section" class="grid-cell">
+                    <h3>Feel</h3>
+                    <span id="feel_temp"></span><sup>&#8451;</sup>
+                </div>
+                <div id="humidity_section" class="grid-cell">
+                    <h3>Humidity</h3>
+                    <p id="humidity"></p>
+                </div>
+                <div id="pressure_section" class="grid-cell">
+                    <h3>Pressure</h3>
+                    <p id="pressure"></p>
+                </div>
+                <div id="wind_speed_section" class="grid-cell">
+                    <h3>Wind speed</h3>
+                    <p id="wind_speed"></p>
+                </div>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
