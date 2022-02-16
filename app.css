@@ -33,6 +33,10 @@ video {
     height:100%;
 }
 
+#ne {
+    color:white;
+}
+
 button {
     font-family:inherit;
 }

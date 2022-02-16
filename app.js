@@ -8,6 +8,8 @@ const humidity_el = document.querySelector("#humidity");
 const pressure_el = document.querySelector("#pressure");
 const wind_speed_el = document.querySelector("#wind_speed");
 
+const p = document.querySelector("#ne");
+
 let latitude = 0;
 let longitude = 0;
 
@@ -15,7 +17,7 @@ if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(getPosition,showError);
 }
 else {
-    console.log("Browser doesnt support geolocation");
+    p.textContent = "Browser doesnt support geolocation";
 }
 
 function getPosition(position) {
@@ -25,11 +27,12 @@ function getPosition(position) {
     fetchData(latitude,longitude)
     .then(response=> {
         console.log('Fetched data');
-        console.log(response);
+        p.textContent = response;
         showResults(response);
     })
     .catch(e => {
         console.error(e);
+        p.textContent = e;
     });
 }
 
