@@ -56,7 +56,7 @@ function getPosition(position) {
 function showError(error){
     switch(error.code) {
         case 1:
-            intro_text.textContent = "Sorry, browser needs to know your location for the weather app";
+            intro_text.textContent = "Sorry, browser needs to know your location for the weather app.If you are in mobile version please activate your location setting";
             break;
         case 2:
             intro_text.textContent = "Sorry,could't take your location,please try again";
